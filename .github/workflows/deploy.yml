@@ -36,7 +36,7 @@ jobs:
         run: yarn bundle:ios
 
       - name: Release
-        uses: ericksoncst/release-action@v1
+        uses: ncipollo/release-action@v1
         with:
           artifacts: 'build/outputs/**/*.bundle,build/outputs/**/*.map'
           artifactErrorsFailBuild: true
