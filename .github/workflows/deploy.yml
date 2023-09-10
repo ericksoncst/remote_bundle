@@ -36,11 +36,11 @@ jobs:
         run: yarn bundle:ios
 
       - name: Release
-        uses: ncipollo/release-action@v1
+        uses: actions/create-release@v1
         with:
           artifacts: 'build/outputs/**/*.bundle,build/outputs/**/*.map'
           artifactErrorsFailBuild: true
           skipIfReleaseExists: true
+          allowUpdates: true
           name: ${{ github.ref_name }}
           tag: ${{ github.ref }}
-          allowUpdates: true
