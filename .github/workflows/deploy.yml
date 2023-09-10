@@ -43,3 +43,4 @@ jobs:
           skipIfReleaseExists: true
           name: ${{ github.ref_name }}
           tag: ${{ github.ref }}
+          allowUpdates: true
