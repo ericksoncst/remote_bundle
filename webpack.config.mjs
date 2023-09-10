@@ -234,7 +234,7 @@ export default (env) => {
       }),
 
       new Repack.plugins.ModuleFederationPlugin({
-        name: 'host',
+        name: 'rbundle',
         exposes: {
           './App': './App.tsx',
        },
