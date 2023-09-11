@@ -10,7 +10,7 @@ function App(props) {
 
   return (
     <SafeAreaView>
-      <Text>Welcome to cards</Text>
+      <Text>Welcome to my remote app</Text>
       {/* <Button title='Go to account' onPress={() => props.navigation.goBack()} /> */}
     </SafeAreaView>
   );
